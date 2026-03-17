@@ -115,8 +115,9 @@ body {
 .search-field:last-of-type { border-right: none; }
 .search-field input, .search-field select {
   border: none; outline: none; font-size: .9rem; color: var(--text-dark);
-  background: transparent; flex: 1; font-family: inherit;
+  background: transparent; flex: 1; font-family: inherit; width: 100%; min-width: 0;
 }
+.search-field input[type="date"] { min-width: 120px; text-transform: uppercase; }
 .search-field select { cursor: pointer; }
 .search-field .icon { color: var(--text-light); font-size: 1rem; flex-shrink: 0; }
 .btn-search {
