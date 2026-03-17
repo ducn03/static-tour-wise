@@ -117,7 +117,18 @@ body {
   border: none; outline: none; font-size: .9rem; color: var(--text-dark);
   background: transparent; flex: 1; font-family: inherit; width: 100%; min-width: 0;
 }
-.search-field input[type="date"] { min-width: 120px; text-transform: uppercase; }
+.search-field input[type="date"] {
+  min-width: 120px; text-transform: uppercase;
+  -webkit-appearance: none; appearance: none;
+}
+/* iOS Safari blank date fix */
+.search-field input[type="date"]:invalid::-webkit-datetime-edit { color: transparent; }
+.search-field input[type="date"]::before {
+  content: attr(placeholder); width: 100%; color: var(--text-light);
+  display: block; position: absolute;
+}
+.search-field input[type="date"]:focus::before,
+.search-field input[type="date"]:valid::before { display: none; }
 .search-field select { cursor: pointer; }
 .search-field .icon { color: var(--text-light); font-size: 1rem; flex-shrink: 0; }
 .btn-search {
