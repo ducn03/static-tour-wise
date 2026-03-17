@@ -56,7 +56,9 @@
           </div>
           <div class="search-field">
             <span class="icon">📅</span>
-            <input type="date" id="searchDate" aria-label="Ngày đi" placeholder="Ngày đi" />
+            <input type="text" id="searchDate" aria-label="Ngày đi" placeholder="Ngày đi" 
+                   onfocus="(this.type='date'); if(this.showPicker) this.showPicker();" 
+                   onblur="if(!this.value) this.type='text'" />
           </div>
           <div class="search-field">
             <span class="icon">🏷️</span>

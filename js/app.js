@@ -99,7 +99,7 @@ function showSection(name) {
 // ── Search ─────────────────────────────────────────────────
 function doSearch() {
   const rawDest = $('searchDestination').value.trim();
-  const type    = $('searchType').value;
+  const type = $('searchType').value;
 
   if (!rawDest && !type) {
     showToast('Vui lòng nhập điểm đến hoặc chọn loại tour!', 'error');
@@ -559,14 +559,14 @@ function renderCombos() {
 
 // ── Destinations ──────────────────────────────────────────
 const destData = [
-  { name: 'Sa Pa',     count: '12 tour', img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop' },
-  { name: 'Đà Lạt',   count: '8 tour',  img: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop' },
-  { name: 'Đà Nẵng',  count: '15 tour', img: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400&h=300&fit=crop' },
+  { name: 'Sa Pa', count: '12 tour', img: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop' },
+  { name: 'Đà Lạt', count: '8 tour', img: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop' },
+  { name: 'Đà Nẵng', count: '15 tour', img: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400&h=300&fit=crop' },
   { name: 'Phú Quốc', count: '10 tour', img: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&h=300&fit=crop' },
-  { name: 'Hà Giang', count: '6 tour',  img: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=300&fit=crop' },
+  { name: 'Hà Giang', count: '6 tour', img: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=300&fit=crop' },
   { name: 'Nha Trang', count: '11 tour', img: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=300&fit=crop' },
-  { name: 'Hội An',   count: '9 tour',  img: 'https://images.unsplash.com/photo-1553858245-f5a86e9bbf23?w=400&h=300&fit=crop' },
-  { name: 'Hạ Long',  count: '14 tour', img: 'https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=400&h=300&fit=crop' },
+  { name: 'Hội An', count: '9 tour', img: 'https://images.unsplash.com/photo-1553858245-f5a86e9bbf23?w=400&h=300&fit=crop' },
+  { name: 'Hạ Long', count: '14 tour', img: 'https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=400&h=300&fit=crop' },
 ];
 function renderDestinations() {
   $('destinationsGrid').innerHTML = destData.map(d => `
@@ -654,9 +654,9 @@ function bindEvents() {
   // Nav links
   const navLinks = $('navLinks');
   document.querySelectorAll('#navLinks a').forEach(a => {
-    a.addEventListener('click', e => { 
-      e.preventDefault(); 
-      showSection(a.dataset.section); 
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      showSection(a.dataset.section);
       navLinks.classList.remove('show'); // close on mobile
     });
   });
@@ -730,7 +730,7 @@ function bindEvents() {
   // Login submit
   $('btnLoginSubmit').addEventListener('click', () => {
     const email = $('loginEmail').value.trim();
-    const pw    = $('loginPassword').value;
+    const pw = $('loginPassword').value;
     if (!email || !pw) {
       showToast('Vui lòng nhập đầy đủ thông tin!', 'error');
       return;
@@ -759,59 +759,59 @@ function bindEvents() {
 }
 
 // ── Make globals ───────────────────────────────────────────
-window.showToast   = showToast;
+window.showToast = showToast;
 window.showSection = showSection;
 
 // ── Fallback data ──────────────────────────────────────────
 function getFallbackTours() {
   return [
     {
-      id:1, name:'Sa Pa 3 Ngày 2 Đêm', provider:'SINH CAFE',
-      destination:'Sa Pa', destinationKey:'sa pa sapa',
-      duration:'3 ngày 2 đêm', price:2050000, type:'Tham quan',
-      transport:'Xe giường nằm', accommodation:'3 sao',
-      meals:'5 bữa chính (120k/bữa)', insurance:'20.000.000 đ/khách',
-      rating:4.5, reviews:320,
-      image:'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=380&fit=crop',
-      description:'Tour Sa Pa cùng Sinh Cafe', itinerary:['Ngày 1','Ngày 2','Ngày 3'],
-      inclusions:['Xe','KS 3 sao','5 bữa','BH','HDV'], exclusions:['CP cá nhân'],
-      reviews_data:[{name:'Ngọc Hà',rating:5,comment:'Rất hay!',verified:true}]
+      id: 1, name: 'Sa Pa 3 Ngày 2 Đêm', provider: 'SINH CAFE',
+      destination: 'Sa Pa', destinationKey: 'sa pa sapa',
+      duration: '3 ngày 2 đêm', price: 2050000, type: 'Tham quan',
+      transport: 'Xe giường nằm', accommodation: '3 sao',
+      meals: '5 bữa chính (120k/bữa)', insurance: '20.000.000 đ/khách',
+      rating: 4.5, reviews: 320,
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=380&fit=crop',
+      description: 'Tour Sa Pa cùng Sinh Cafe', itinerary: ['Ngày 1', 'Ngày 2', 'Ngày 3'],
+      inclusions: ['Xe', 'KS 3 sao', '5 bữa', 'BH', 'HDV'], exclusions: ['CP cá nhân'],
+      reviews_data: [{ name: 'Ngọc Hà', rating: 5, comment: 'Rất hay!', verified: true }]
     },
     {
-      id:2, name:'Sa Pa 3 Ngày 2 Đêm', provider:'DREAM TRAVEL',
-      destination:'Sa Pa', destinationKey:'sa pa sapa',
-      duration:'3 ngày 2 đêm', price:2890000, type:'Tham quan',
-      transport:'Tàu hỏa', accommodation:'3 sao',
-      meals:'5 bữa chính (130k/bữa)', insurance:'20.000.000 đ/khách',
-      rating:4.7, reviews:215,
-      image:'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&h=380&fit=crop',
-      description:'Tour Sa Pa cùng Dream Travel', itinerary:['Ngày 1','Ngày 2','Ngày 3'],
-      inclusions:['Tàu hỏa','KS 3 sao','5 bữa','BH','Xe đưa đón'], exclusions:['CP cá nhân'],
-      reviews_data:[{name:'Thu Phương',rating:5,comment:'Thích lắm!',verified:true}]
+      id: 2, name: 'Sa Pa 3 Ngày 2 Đêm', provider: 'DREAM TRAVEL',
+      destination: 'Sa Pa', destinationKey: 'sa pa sapa',
+      duration: '3 ngày 2 đêm', price: 2890000, type: 'Tham quan',
+      transport: 'Tàu hỏa', accommodation: '3 sao',
+      meals: '5 bữa chính (130k/bữa)', insurance: '20.000.000 đ/khách',
+      rating: 4.7, reviews: 215,
+      image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&h=380&fit=crop',
+      description: 'Tour Sa Pa cùng Dream Travel', itinerary: ['Ngày 1', 'Ngày 2', 'Ngày 3'],
+      inclusions: ['Tàu hỏa', 'KS 3 sao', '5 bữa', 'BH', 'Xe đưa đón'], exclusions: ['CP cá nhân'],
+      reviews_data: [{ name: 'Thu Phương', rating: 5, comment: 'Thích lắm!', verified: true }]
     },
     {
-      id:3, name:'Đà Lạt 4 Ngày 3 Đêm', provider:'SAIGON STAR',
-      destination:'Đà Lạt', destinationKey:'da lat dalat',
-      duration:'4 ngày 3 đêm', price:3886000, type:'Nghỉ dưỡng',
-      transport:'Xe 45 chỗ', accommodation:'3 sao',
-      meals:'6 bữa ăn (150k/bữa)', insurance:'20.000.000 đ/khách',
-      rating:4.6, reviews:178,
-      image:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=380&fit=crop',
-      description:'Tour Đà Lạt', itinerary:['Ngày 1','Ngày 2','Ngày 3','Ngày 4'],
-      inclusions:['Xe','KS 3 sao','6 bữa','BH','HDV'], exclusions:['CP cá nhân'],
-      reviews_data:[{name:'Lan Anh',rating:5,comment:'Đẹp quá!',verified:true}]
+      id: 3, name: 'Đà Lạt 4 Ngày 3 Đêm', provider: 'SAIGON STAR',
+      destination: 'Đà Lạt', destinationKey: 'da lat dalat',
+      duration: '4 ngày 3 đêm', price: 3886000, type: 'Nghỉ dưỡng',
+      transport: 'Xe 45 chỗ', accommodation: '3 sao',
+      meals: '6 bữa ăn (150k/bữa)', insurance: '20.000.000 đ/khách',
+      rating: 4.6, reviews: 178,
+      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=380&fit=crop',
+      description: 'Tour Đà Lạt', itinerary: ['Ngày 1', 'Ngày 2', 'Ngày 3', 'Ngày 4'],
+      inclusions: ['Xe', 'KS 3 sao', '6 bữa', 'BH', 'HDV'], exclusions: ['CP cá nhân'],
+      reviews_data: [{ name: 'Lan Anh', rating: 5, comment: 'Đẹp quá!', verified: true }]
     },
     {
-      id:4, name:'Đà Lạt 4 Ngày 3 Đêm', provider:'SAIGONTOURIST',
-      destination:'Đà Lạt', destinationKey:'da lat dalat',
-      duration:'4 ngày 3 đêm', price:3290000, type:'Nghỉ dưỡng',
-      transport:'Xe 45 chỗ', accommodation:'3 sao',
-      meals:'6 bữa (140k/bữa)', insurance:'20.000.000 đ/khách',
-      rating:4.8, reviews:402,
-      image:'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&h=380&fit=crop',
-      description:'Tour Đà Lạt Saigontourist', itinerary:['Ngày 1','Ngày 2','Ngày 3','Ngày 4'],
-      inclusions:['Xe','KS 3 sao','6 bữa','BH','HDV'], exclusions:['CP cá nhân'],
-      reviews_data:[{name:'Kim Ngân',rating:5,comment:'Uy tín!',verified:true}]
+      id: 4, name: 'Đà Lạt 4 Ngày 3 Đêm', provider: 'SAIGONTOURIST',
+      destination: 'Đà Lạt', destinationKey: 'da lat dalat',
+      duration: '4 ngày 3 đêm', price: 3290000, type: 'Nghỉ dưỡng',
+      transport: 'Xe 45 chỗ', accommodation: '3 sao',
+      meals: '6 bữa (140k/bữa)', insurance: '20.000.000 đ/khách',
+      rating: 4.8, reviews: 402,
+      image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&h=380&fit=crop',
+      description: 'Tour Đà Lạt Saigontourist', itinerary: ['Ngày 1', 'Ngày 2', 'Ngày 3', 'Ngày 4'],
+      inclusions: ['Xe', 'KS 3 sao', '6 bữa', 'BH', 'HDV'], exclusions: ['CP cá nhân'],
+      reviews_data: [{ name: 'Kim Ngân', rating: 5, comment: 'Uy tín!', verified: true }]
     }
   ];
 }
