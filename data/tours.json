@@ -1,0 +1,187 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "name": "Sa Pa 3 Ngày 2 Đêm - Thung Lũng Mây",
+      "provider": "VIET TRAVELLER",
+      "destination": "Sa Pa",
+      "duration": "3 Ngày 2 Đêm",
+      "price": 4500000,
+      "rating": 4.5,
+      "reviews": 1200,
+      "type": "Leo núi",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
+      "accommodation": "3 Sao Khách Sạn",
+      "meals": "5 Bữa (150k/bữa)",
+      "insurance": "20 Tr đ/người",
+      "activities": "Leo núi, Chợ địa phương, Homestay",
+      "highlights": "Trải nghiệm địa phương",
+      "verifiedFeedback": true,
+      "description": "Khám phá vẻ đẹp hùng vĩ của Sa Pa với những ruộng bậc thang tuyệt đẹp, trải nghiệm văn hóa các dân tộc thiểu số và chinh phục đỉnh Fansipan.",
+      "itinerary": [
+        "Ngày 1: Hà Nội - Sa Pa, check-in khách sạn, tham quan chợ đêm",
+        "Ngày 2: Leo Fansipan bằng cáp treo, tham quan ruộng bậc thang Mường Hoa",
+        "Ngày 3: Tham quan bản Cát Cát, mua sắm, về Hà Nội"
+      ],
+      "inclusions": ["Xe đưa đón", "Khách sạn 3 sao", "5 bữa ăn", "Bảo hiểm du lịch", "Hướng dẫn viên"],
+      "exclusions": ["Vé máy bay", "Chi phí cá nhân", "Đồ uống"],
+      "reviews_data": [
+        { "name": "An Nguyên", "rating": 5, "comment": "Văn hóa tuyệt vời, hướng dẫn viên nhiệt tình, tour rất đáng tiền!", "verified": true },
+        { "name": "Phúc Lê", "rating": 5, "comment": "Cảnh quan tuyệt đẹp, tổ chức chu đáo. Sẽ quay lại lần nữa!", "verified": true }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sa Pa 3N2Đ - View Sang Trọng",
+      "provider": "ASIA DISCOVERY",
+      "destination": "Sa Pa",
+      "duration": "Ngày 3D2N",
+      "price": 4800000,
+      "rating": 4.8,
+      "reviews": 350,
+      "type": "Nghỉ dưỡng",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=250&fit=crop",
+      "accommodation": "4 Sao Resort (Nghỉ dưỡng Cao nguyên)",
+      "meals": "6 Bữa (200k/bữa)",
+      "insurance": "50 Tr đ/người",
+      "activities": "Cáp treo Fansipan, Sun World, Bể bơi",
+      "highlights": "Tiện nghi hiện đại",
+      "verifiedFeedback": true,
+      "description": "Trải nghiệm Sa Pa theo phong cách sang trọng với resort 4 sao, dịch vụ cao cấp và các hoạt động giải trí đẳng cấp tại Sun World.",
+      "itinerary": [
+        "Ngày 1: Đón tại Hà Nội, di chuyển Sa Pa, nhận phòng resort 4 sao",
+        "Ngày 2: Sun World Fansipan Legend, cáp treo, bể bơi vô cực",
+        "Ngày 3: Spa buổi sáng, mua quà lưu niệm, về Hà Nội"
+      ],
+      "inclusions": ["Xe limousine đưa đón", "Resort 4 sao", "6 bữa ăn", "Bảo hiểm cao cấp", "Hướng dẫn viên riêng"],
+      "exclusions": ["Vé máy bay", "Chi phí cá nhân"],
+      "reviews_data": [
+        { "name": "Minh Châu", "rating": 5, "comment": "Resort đẹp xuất sắc, dịch vụ 5 sao, xứng đáng với giá tiền!", "verified": true },
+        { "name": "Hoàng Nam", "rating": 4, "comment": "Cảnh đẹp, phòng ốc sang trọng. Một số dịch vụ cần cải thiện.", "verified": true }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Đà Nẵng - Hội An 4 Ngày 3 Đêm",
+      "provider": "VIET TRAVELLER",
+      "destination": "Đà Nẵng",
+      "duration": "4 Ngày 3 Đêm",
+      "price": 5900000,
+      "rating": 4.7,
+      "reviews": 890,
+      "type": "Biển",
+      "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400&h=250&fit=crop",
+      "accommodation": "4 Sao Khách Sạn Biển",
+      "meals": "6 Bữa",
+      "insurance": "30 Tr đ/người",
+      "activities": "Bà Nà Hills, Hội An, Ngũ Hành Sơn",
+      "highlights": "Biển xanh cát trắng",
+      "verifiedFeedback": true,
+      "description": "Khám phá thành phố đáng sống Đà Nẵng với bãi biển tuyệt đẹp, phố cổ Hội An charming và Bà Nà Hills kỳ ảo.",
+      "itinerary": [
+        "Ngày 1: Bay Đà Nẵng, nhận phòng, tắm biển",
+        "Ngày 2: Bà Nà Hills - Cầu Vàng",
+        "Ngày 3: Phố cổ Hội An, Ngũ Hành Sơn",
+        "Ngày 4: Mua sắm, về Hà Nội"
+      ],
+      "inclusions": ["Vé máy bay khứ hồi", "Khách sạn 4 sao biển", "6 bữa ăn", "Bảo hiểm", "Xe đưa đón"],
+      "exclusions": ["Chi phí cá nhân", "Vé tham quan (một số điểm)"],
+      "reviews_data": [
+        { "name": "Thu Hà", "rating": 5, "comment": "Tour tuyệt vời! Hội An đêm đẹp lắm. Sẽ quay lại!", "verified": true },
+        { "name": "Văn Đức", "rating": 5, "comment": "Bà Nà Hills ấn tượng, cầu vàng đẹp hơn ảnh nhiều!", "verified": true }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Phú Quốc 5 Ngày 4 Đêm Premium",
+      "provider": "ASIA DISCOVERY",
+      "destination": "Phú Quốc",
+      "duration": "5 Ngày 4 Đêm",
+      "price": 8500000,
+      "rating": 4.9,
+      "reviews": 520,
+      "type": "Nghỉ dưỡng",
+      "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&h=250&fit=crop",
+      "accommodation": "5 Sao Resort Biển",
+      "meals": "8 Bữa (Fine Dining)",
+      "insurance": "100 Tr đ/người",
+      "activities": "Lặn biển, Câu cá, Spa",
+      "highlights": "Đảo ngọc thiên đường",
+      "verifiedFeedback": true,
+      "description": "Tận hưởng kỳ nghỉ xa hoa ở đảo ngọc Phú Quốc với resort 5 sao, bãi biển riêng và dịch vụ đẳng cấp thế giới.",
+      "itinerary": [
+        "Ngày 1: Bay Phú Quốc, nhận phòng resort 5 sao",
+        "Ngày 2: Lặn biển san hô, tham quan đảo",
+        "Ngày 3: Spa & Wellness, bãi biển riêng",
+        "Ngày 4: Câu cá, nướng BBQ trên thuyền",
+        "Ngày 5: Mua sắm, về Hà Nội"
+      ],
+      "inclusions": ["Vé máy bay hạng thương gia", "Resort 5 sao", "8 bữa Fine Dining", "Bảo hiểm cao cấp", "Butler riêng"],
+      "exclusions": ["Chi phí cá nhân"],
+      "reviews_data": [
+        { "name": "Linh Chi", "rating": 5, "comment": "Resort đẳng cấp quốc tế! Dịch vụ hoàn hảo từng chi tiết.", "verified": true },
+        { "name": "Bảo Long", "rating": 5, "comment": "Phú Quốc đẹp như mơ, resort tuyệt vời. Chắc chắn sẽ quay lại!", "verified": true }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Hà Giang Loop 3 Ngày 2 Đêm",
+      "provider": "ADVENTURE TOURS",
+      "destination": "Hà Giang",
+      "duration": "3 Ngày 2 Đêm",
+      "price": 3200000,
+      "rating": 4.6,
+      "reviews": 670,
+      "type": "Leo núi",
+      "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=250&fit=crop",
+      "accommodation": "Homestay Dân tộc",
+      "meals": "5 Bữa",
+      "insurance": "15 Tr đ/người",
+      "activities": "Đèo Mã Pí Lèng, Đồng Văn, Lũng Cú",
+      "highlights": "Cao nguyên đá kỳ vĩ",
+      "verifiedFeedback": true,
+      "description": "Chinh phục cao nguyên đá Đồng Văn - một trong những cao nguyên đá đẹp nhất thế giới. Trải nghiệm văn hóa H'Mông độc đáo.",
+      "itinerary": [
+        "Ngày 1: Hà Nội - Hà Giang, khởi động loop",
+        "Ngày 2: Đèo Mã Pí Lèng, Mèo Vạc, Đồng Văn",
+        "Ngày 3: Lũng Cú, về Hà Nội"
+      ],
+      "inclusions": ["Xe máy/xe ô tô", "Homestay", "5 bữa ăn", "Bảo hiểm", "Hướng dẫn viên địa phương"],
+      "exclusions": ["Vé tham quan", "Chi phí cá nhân"],
+      "reviews_data": [
+        { "name": "Quang Huy", "rating": 5, "comment": "Đường đèo ám ảnh! Cảnh đẹp không thể tả. Must-do!", "verified": true },
+        { "name": "Mai Phương", "rating": 4, "comment": "Hành trình vất vả nhưng xứng đáng. Homestay thú vị!", "verified": true }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Nha Trang 3 Ngày 2 Đêm - Đảo Nhỏ",
+      "provider": "VIET TRAVELLER",
+      "destination": "Nha Trang",
+      "duration": "3 Ngày 2 Đêm",
+      "price": 4100000,
+      "rating": 4.4,
+      "reviews": 1100,
+      "type": "Biển",
+      "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=250&fit=crop",
+      "accommodation": "3 Sao Khách Sạn Trung Tâm",
+      "meals": "5 Bữa Hải Sản",
+      "insurance": "20 Tr đ/người",
+      "activities": "Tour 4 Đảo, Vinpearl Land, Tắm Bùn",
+      "highlights": "Biển xanh 4 đảo",
+      "verifiedFeedback": true,
+      "description": "Khám phá vùng biển Nha Trang với tour 4 đảo nổi tiếng, tắm bùn khoáng độc đáo và công viên Vinpearl Land sôi động.",
+      "itinerary": [
+        "Ngày 1: Bay Nha Trang, nhận phòng, dạo bãi biển",
+        "Ngày 2: Tour 4 đảo, tắm bùn khoáng",
+        "Ngày 3: Vinpearl Land, về Hà Nội"
+      ],
+      "inclusions": ["Vé máy bay", "Khách sạn 3 sao", "5 bữa hải sản", "Bảo hiểm", "Vé tour 4 đảo"],
+      "exclusions": ["Vé Vinpearl", "Chi phí cá nhân"],
+      "reviews_data": [
+        { "name": "Khánh Ly", "rating": 5, "comment": "Tour 4 đảo rất vui! Hải sản tươi ngon, hướng dẫn viên dễ thương!", "verified": true },
+        { "name": "Tuấn Anh", "rating": 4, "comment": "Biển đẹp, ổn nhưng nên tránh mùa cao điểm.", "verified": true }
+      ]
+    }
+  ]
+}
