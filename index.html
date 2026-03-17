@@ -1,293 +1,394 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TourLink – Đặt Tour Du Lịch Thông Minh</title>
-  <meta name="description" content="TourLink – Nền tảng đặt tour du lịch uy tín, so sánh và tìm kiếm tour dễ dàng với hàng trăm lựa chọn hấp dẫn." />
+  <title>TourLink – Tìm & So Sánh Tour Du Lịch</title>
+  <meta name="description"
+    content="TourLink – Tìm kiếm và so sánh tour du lịch từ nhiều nhà cung cấp, giúp bạn chọn được tour tốt nhất với giá hợp lý nhất." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="#" class="logo" id="logoHome">
-      <div class="logo-icon">✈</div>
-      TourLink
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#" class="active" data-section="home" id="navHome">CHUYẾN ĐI</a></li>
-      <li><a href="#" data-section="combo" id="navCombo">COMBO</a></li>
-      <li><a href="#" data-section="destinations" id="navDestinations">ĐIỂM ĐẾN</a></li>
-      <li><a href="#" data-section="guidebook" id="navGuidebook">CẨM NANG</a></li>
-      <li><a href="#" data-section="partner" id="navPartner">TRỞ THÀNH ĐỐI TÁC</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="btn-login" id="btnLogin">ĐĂNG NHẬP</button>
-    </div>
-  </div>
-</nav>
-
-<!-- ===== TOAST CONTAINER ===== -->
-<div class="toast-container" id="toastContainer" aria-live="polite"></div>
-
-<!-- ===== HOME SECTION ===== -->
-<div class="section-page active" id="sectionHome">
-
-  <!-- Hero / Search -->
-  <section class="hero" id="heroSection">
-    <div class="hero-content">
-      <h1 class="hero-title">Khám phá thế giới cùng <span>TourLink</span> 🌏</h1>
-      <div class="search-bar" role="search">
-        <div class="search-field">
-          <span class="icon">📍</span>
-          <input type="text" id="searchDestination" placeholder="Điểm đến?" aria-label="Điểm đến" />
-        </div>
-        <div class="search-field">
-          <span class="icon">📅</span>
-          <input type="date" id="searchDate" aria-label="Ngày đi" />
-        </div>
-        <div class="search-field">
-          <span class="icon">🏷️</span>
-          <select id="searchType" aria-label="Loại tour">
-            <option value="">Loại tour?</option>
-            <option value="Leo núi">🏔 Leo núi</option>
-            <option value="Nghỉ dưỡng">🌴 Nghỉ dưỡng</option>
-            <option value="Biển">🏖 Biển</option>
-          </select>
-        </div>
-        <button class="btn-search" id="btnSearch">🔍 TÌM KIẾM</button>
-      </div>
-    </div>
-  </section>
-
-  <div class="main-content">
-
-    <!-- Search Results Info -->
-    <div id="searchResultsInfo" style="display:none;"></div>
-
-    <!-- Stats Row -->
-    <div class="stats-row" id="statsRow">
-      <div class="stat-card">
-        <div class="stat-value">500+</div>
-        <div class="stat-label">Tour du lịch</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">50K+</div>
-        <div class="stat-label">Khách hàng hài lòng</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">120+</div>
-        <div class="stat-label">Điểm đến</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">4.8★</div>
-        <div class="stat-label">Đánh giá trung bình</div>
-      </div>
-    </div>
-
-    <!-- Compare Strip -->
-    <div class="compare-strip" id="compareStrip">
-      <span class="compare-strip-title">⚖️ SO SÁNH TOUR:</span>
-      <div class="compare-slots" id="compareSlots">
-        <div class="compare-slot" id="compareSlotA">
-          <span class="compare-slot-empty-text">Chọn Tour A để so sánh</span>
-        </div>
-        <div class="compare-slot" id="compareSlotB">
-          <span class="compare-slot-empty-text">Chọn Tour B để so sánh</span>
-        </div>
-      </div>
-      <button class="btn-compare" id="btnCompare" disabled>⚖️ SO SÁNH NGAY</button>
-    </div>
-
-    <!-- Tour List -->
-    <div class="section-header">
-      <h2 class="section-title" id="tourListTitle">TOUR NỔI BẬT</h2>
-      <div class="filter-tabs" id="filterTabs">
-        <button class="filter-tab active" data-filter="all">Tất cả</button>
-        <button class="filter-tab" data-filter="Leo núi">🏔 Leo núi</button>
-        <button class="filter-tab" data-filter="Nghỉ dưỡng">🌴 Nghỉ dưỡng</button>
-        <button class="filter-tab" data-filter="Biển">🏖 Biển</button>
-      </div>
-    </div>
-
-    <div class="tour-grid" id="tourGrid">
-      <!-- Populated by JS -->
-    </div>
-
-    <!-- Compare Table Section -->
-    <div class="compare-section" id="compareTableSection" style="display:none;">
-      <div class="section-header">
-        <h2 class="section-title">SO SÁNH TOUR</h2>
-        <button class="filter-tab" id="btnCloseCompare">✖ Đóng</button>
-      </div>
-      <div id="compareTableWrap"></div>
-    </div>
-
-    <!-- Reviews Section -->
-    <div style="margin-top: 2rem;">
-      <div class="section-header">
-        <h2 class="section-title">ĐÁNH GIÁ NỔI BẬT (XÁC THỰC) <span class="badge-new">✅</span></h2>
-      </div>
-      <div class="reviews-grid" id="reviewsGrid">
-        <!-- Populated by JS -->
-      </div>
-    </div>
-
-    <!-- Partner Logos -->
-    <div class="partner-section">
-      <h3 style="font-size: .9rem; font-weight: 700; color: var(--text-mid);">ĐỐI TÁC TOUR UY TÍN</h3>
-      <div class="partner-logos">
-        <div class="partner-logo">VIET TRAVELLER</div>
-        <div class="partner-logo">ASIA DISCOVERY</div>
-        <div class="partner-logo">ADVENTURE TOURS</div>
-        <div class="partner-logo">SUNWORLD</div>
-        <div class="partner-logo">VINPEARL</div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ===== COMBO SECTION ===== -->
-<div class="section-page" id="sectionCombo">
-  <section class="hero" style="padding: 2rem;">
-    <div class="hero-content">
-      <h1 class="hero-title" style="margin-bottom:.5rem;">🎁 Tour COMBO Tiết Kiệm</h1>
-      <p style="text-align:center; color:rgba(255,255,255,.85); font-size:.9rem;">Kết hợp nhiều dịch vụ, tiết kiệm hơn đến 30%</p>
-    </div>
-  </section>
-  <div class="main-content">
-    <div class="section-header">
-      <h2 class="section-title">COMBO PHỔ BIẾN</h2>
-    </div>
-    <div class="combo-grid" id="comboGrid"><!-- JS --></div>
-  </div>
-</div>
-
-<!-- ===== DESTINATIONS SECTION ===== -->
-<div class="section-page" id="sectionDestinations">
-  <section class="hero" style="padding: 2rem;">
-    <div class="hero-content">
-      <h1 class="hero-title" style="margin-bottom:.5rem;">🗺️ Khám Phá Điểm Đến</h1>
-      <p style="text-align:center; color:rgba(255,255,255,.85); font-size:.9rem;">Hơn 120+ điểm đến hấp dẫn trên toàn quốc</p>
-    </div>
-  </section>
-  <div class="main-content">
-    <div class="section-header">
-      <h2 class="section-title">ĐIỂM ĐẾN HOT</h2>
-    </div>
-    <div class="destinations-grid" id="destinationsGrid"><!-- JS --></div>
-  </div>
-</div>
-
-<!-- ===== GUIDEBOOK SECTION ===== -->
-<div class="section-page" id="sectionGuidebook">
-  <section class="hero" style="padding: 2rem;">
-    <div class="hero-content">
-      <h1 class="hero-title" style="margin-bottom:.5rem;">📖 Cẩm Nang Du Lịch</h1>
-      <p style="text-align:center; color:rgba(255,255,255,.85); font-size:.9rem;">Bí quyết du lịch từ những người đã trải nghiệm</p>
-    </div>
-  </section>
-  <div class="main-content" id="guidebookContent"><!-- JS --></div>
-</div>
-
-<!-- ===== PARTNER SECTION ===== -->
-<div class="section-page" id="sectionPartner">
-  <section class="hero" style="padding: 2rem;">
-    <div class="hero-content">
-      <h1 class="hero-title" style="margin-bottom:.5rem;">🤝 Trở Thành Đối Tác</h1>
-      <p style="text-align:center; color:rgba(255,255,255,.85); font-size:.9rem;">Gia nhập mạng lưới hơn 500 đơn vị lữ hành uy tín</p>
-    </div>
-  </section>
-  <div class="main-content" id="partnerContent"><!-- JS --></div>
-</div>
-
-<!-- ===== TOUR DETAIL MODAL ===== -->
-<div class="modal-overlay" id="tourModal" role="dialog" aria-modal="true" aria-labelledby="modalTourTitle">
-  <div class="modal" id="modalContent">
-    <div class="modal-header">
-      <img id="modalImg" src="" alt="Tour Image" />
-      <button class="modal-close" id="modalClose" aria-label="Đóng">✕</button>
-      <div class="modal-header-overlay">
-        <div>
-          <div id="modalTourTitle" class="modal-title"></div>
-          <div id="modalProvider" class="modal-provider"></div>
-        </div>
-      </div>
-    </div>
-    <div class="modal-body">
-      <div class="info-grid" id="modalInfoGrid"></div>
-      <div class="modal-section-title">📅 LỊCH TRÌNH</div>
-      <ul class="itinerary-list" id="modalItinerary"></ul>
-      <div class="modal-section-title">✅ BAO GỒM</div>
-      <div class="tags" id="modalInclusions"></div>
-      <div class="modal-section-title">❌ KHÔNG BAO GỒM</div>
-      <div class="tags" id="modalExclusions"></div>
-      <div class="modal-section-title">💬 ĐÁNH GIÁ</div>
-      <div id="modalReviews"></div>
-    </div>
-    <div class="modal-footer">
-      <div>
-        <div class="modal-price" id="modalPrice"></div>
-        <div class="modal-price-sub">Giá mỗi người · Đã bao gồm thuế và phí</div>
-      </div>
-      <button class="btn-book" id="modalBookBtn">🎫 ĐẶT TOUR NGAY</button>
-    </div>
-  </div>
-</div>
-
-<!-- ===== CHAT WIDGET ===== -->
-<div class="chat-widget">
-  <div class="chat-bubble">Tôi có thể giúp gì? 🤖</div>
-  <button class="chat-btn" id="chatBtn" aria-label="Hỗ trợ trực tuyến">💬</button>
-</div>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="#" class="logo" style="margin-bottom:.75rem; display:inline-flex;">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="logo" id="logoHome">
         <div class="logo-icon">✈</div>
         TourLink
       </a>
-      <p class="footer-desc">Nền tảng đặt tour du lịch trực tuyến uy tín hàng đầu Việt Nam. Kết nối khách du lịch với hơn 500 đơn vị lữ hành được kiểm duyệt chặt chẽ.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Khám phá</h4>
-      <ul>
-        <li><a href="#">Tour trong nước</a></li>
-        <li><a href="#">Tour nước ngoài</a></li>
-        <li><a href="#">Tour combo</a></li>
-        <li><a href="#">Tour cuối tuần</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="active" data-section="home" id="navHome">CHUYẾN ĐI</a></li>
+        <li><a href="#" data-section="combo" id="navCombo">COMBO</a></li>
+        <li><a href="#" data-section="destinations" id="navDestinations">ĐIỂM ĐẾN</a></li>
+        <li><a href="#" data-section="guidebook" id="navGuidebook">CẨM NANG</a></li>
+        <li><a href="#" data-section="partner" id="navPartner">TRỞ THÀNH ĐỐI TÁC</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="btn-login" id="btnLogin">ĐĂNG NHẬP</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Hỗ trợ</h4>
-      <ul>
-        <li><a href="#">Trung tâm trợ giúp</a></li>
-        <li><a href="#">Chính sách hoàn tiền</a></li>
-        <li><a href="#">Điều khoản sử dụng</a></li>
-        <li><a href="#">Liên hệ</a></li>
-      </ul>
+  </nav>
+
+  <!-- ===== TOAST CONTAINER ===== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ===== HOME SECTION ===== -->
+  <div class="section-page active" id="sectionHome">
+
+    <!-- Hero / Search -->
+    <section class="hero" id="heroSection">
+      <div class="hero-content">
+        <h1 class="hero-title">Chọn đúng, đi vui cùng <span>TourLink</span> 🌏</h1>
+        <p class="hero-sub">Nhập điểm đến, chọn ngày đi và bấm Tìm kiếm để xem kết quả so sánh tour tốt nhất</p>
+        <div class="search-bar" role="search">
+          <div class="search-field">
+            <span class="icon">📍</span>
+            <input type="text" id="searchDestination" placeholder="Điểm đến? (vd: Sa Pa, Đà Lạt)"
+              aria-label="Điểm đến" />
+          </div>
+          <div class="search-field">
+            <span class="icon">📅</span>
+            <input type="date" id="searchDate" aria-label="Ngày đi" />
+          </div>
+          <div class="search-field">
+            <span class="icon">🏷️</span>
+            <select id="searchType" aria-label="Loại tour">
+              <option value="">Loại tour?</option>
+              <option value="Tham quan">🗺️ Tham quan</option>
+              <option value="Nghỉ dưỡng">🌴 Nghỉ dưỡng</option>
+              <option value="Leo núi">🏔️ Leo núi</option>
+              <option value="Biển">🏖️ Biển</option>
+            </select>
+          </div>
+          <button class="btn-search" id="btnSearch">🔍 TÌM KIẾM</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Area (hidden until search) -->
+    <div class="main-content" id="resultsArea" style="display:none;">
+      <div class="search-results-info" id="searchResultsInfo">
+        <span id="searchResultsText"></span>
+        <button class="clear-search" id="btnClearSearch">✕ Tìm kiếm mới</button>
+      </div>
+      <div class="section-header">
+        <h2 class="section-title" id="tourListTitle">KẾT QUẢ TÌM KIẾM</h2>
+      </div>
+      <div class="tour-grid" id="tourGrid"></div>
+
+      <!-- Compare Table -->
+      <div class="compare-section" id="compareSection" style="display:none;">
+        <div class="section-header" style="margin-bottom:1rem;">
+          <h2 class="section-title">SO SÁNH TOUR</h2>
+        </div>
+        <div class="compare-selectors" id="compareSelectors"></div>
+        <div id="compareTableWrap"></div>
+      </div>
+
+      <!-- Reviews -->
+      <div style="margin-top:2rem;">
+        <div class="section-header">
+          <h2 class="section-title">ĐÁNH GIÁ XÁC THỰC <span class="badge-new">✅</span></h2>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid"></div>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Công ty</h4>
-      <ul>
-        <li><a href="#">Về TourLink</a></li>
-        <li><a href="#">Tuyển dụng</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Đối tác</a></li>
-      </ul>
+
+    <!-- Empty State -->
+    <div class="empty-home" id="emptyHome">
+      <div class="empty-home-inner">
+        <div class="empty-home-icon">🗺️</div>
+        <h2>Tìm tour phù hợp với bạn</h2>
+        <p>Nhập điểm đến và bấm <strong>Tìm kiếm</strong> để so sánh ngay các tour từ nhiều nhà cung cấp uy tín.</p>
+        <div class="quick-dests">
+          <span class="quick-dest-label">Gợi ý phổ biến:</span>
+          <button class="quick-dest-btn" data-dest="Sa Pa">🏔️ Sa Pa</button>
+          <button class="quick-dest-btn" data-dest="Đà Lạt">🌸 Đà Lạt</button>
+          <button class="quick-dest-btn" data-dest="Đà Nẵng">🏖️ Đà Nẵng</button>
+          <button class="quick-dest-btn" data-dest="Phú Quốc">🌴 Phú Quốc</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== COMBO SECTION ===== -->
+  <div class="section-page" id="sectionCombo">
+    <section class="hero" style="padding:2rem;">
+      <div class="hero-content">
+        <h1 class="hero-title" style="margin-bottom:.5rem;">🎁 Tour COMBO Tiết Kiệm</h1>
+        <p style="text-align:center;color:rgba(255,255,255,.85);font-size:.9rem;">Kết hợp nhiều dịch vụ, tiết kiệm hơn
+          đến 30%</p>
+      </div>
+    </section>
+    <div class="main-content">
+      <div class="section-header">
+        <h2 class="section-title">COMBO PHỔ BIẾN</h2>
+      </div>
+      <div class="combo-grid" id="comboGrid"></div>
     </div>
   </div>
-  <div class="footer-bottom">© 2025 TourLink. Tất cả quyền được bảo lưu. 🇻🇳</div>
-</footer>
 
-<script src="js/app.js"></script>
+  <!-- ===== DESTINATIONS SECTION ===== -->
+  <div class="section-page" id="sectionDestinations">
+    <section class="hero" style="padding:2rem;">
+      <div class="hero-content">
+        <h1 class="hero-title" style="margin-bottom:.5rem;">🗺️ Khám Phá Điểm Đến</h1>
+        <p style="text-align:center;color:rgba(255,255,255,.85);font-size:.9rem;">Bấm vào điểm đến để tìm tour ngay</p>
+      </div>
+    </section>
+    <div class="main-content">
+      <div class="section-header">
+        <h2 class="section-title">ĐIỂM ĐẾN HOT</h2>
+      </div>
+      <div class="destinations-grid" id="destinationsGrid"></div>
+    </div>
+  </div>
+
+  <!-- ===== GUIDEBOOK SECTION ===== -->
+  <div class="section-page" id="sectionGuidebook">
+    <section class="hero" style="padding:2rem;">
+      <div class="hero-content">
+        <h1 class="hero-title" style="margin-bottom:.5rem;">📖 Cẩm Nang Du Lịch</h1>
+        <p style="text-align:center;color:rgba(255,255,255,.85);font-size:.9rem;">Chia sẻ kinh nghiệm từ những người đã
+          trải nghiệm thực tế</p>
+      </div>
+    </section>
+    <div class="main-content" id="guidebookContent"></div>
+  </div>
+
+  <!-- ===== GUIDEBOOK DETAIL SECTION ===== -->
+  <div class="section-page" id="sectionGuidebookDetail">
+    <div class="main-content" id="guidebookDetailContent"></div>
+  </div>
+
+  <!-- ===== PARTNER SECTION ===== -->
+  <div class="section-page" id="sectionPartner">
+    <section class="hero" style="padding:2rem;">
+      <div class="hero-content">
+        <h1 class="hero-title" style="margin-bottom:.5rem;">🤝 Trở Thành Đối Tác</h1>
+        <p style="text-align:center;color:rgba(255,255,255,.85);font-size:.9rem;">Gia nhập mạng lưới hàng trăm đơn vị lữ
+          hành uy tín</p>
+      </div>
+    </section>
+    <div class="main-content" id="partnerContent"></div>
+  </div>
+
+  <!-- ===== TOUR DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="tourModal" role="dialog" aria-modal="true" aria-labelledby="modalTourTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <img id="modalImg" src="" alt="Tour Image" />
+        <button class="modal-close" id="modalClose" aria-label="Đóng">✕</button>
+        <div class="modal-header-overlay">
+          <div>
+            <div id="modalTourTitle" class="modal-title"></div>
+            <div id="modalProvider" class="modal-provider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="info-grid" id="modalInfoGrid"></div>
+        <div class="modal-section-title">📅 LỊCH TRÌNH</div>
+        <ul class="itinerary-list" id="modalItinerary"></ul>
+        <div class="modal-section-title">✅ BAO GỒM</div>
+        <div class="tags" id="modalInclusions"></div>
+        <div class="modal-section-title">❌ KHÔNG BAO GỒM</div>
+        <div class="tags" id="modalExclusions"></div>
+        <div class="modal-section-title">💬 ĐÁNH GIÁ KHÁCH HÀNG</div>
+        <div id="modalReviews"></div>
+      </div>
+      <div class="modal-footer">
+        <div>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-price-sub">Giá mỗi người · Đã bao gồm thuế và phí</div>
+        </div>
+        <button class="btn-book" id="modalBookBtn">🎫 ĐẶT TOUR NGAY</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LOGIN MODAL ===== -->
+  <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal login-modal">
+      <button class="modal-close" id="loginClose" aria-label="Đóng"
+        style="position:absolute;top:.75rem;right:.75rem;z-index:10;">✕</button>
+
+      <!-- Step 1: Role selection -->
+      <div id="loginStep1">
+        <div class="login-header">
+          <div class="login-logo">
+            <div class="logo-icon" style="width:48px;height:48px;font-size:1.4rem;">✈</div>
+            <span style="font-size:1.4rem;font-weight:900;color:var(--primary);">TourLink</span>
+          </div>
+          <h2 class="login-title" id="loginTitle">Bạn là ai?</h2>
+          <p class="login-sub">Chọn loại tài khoản để tiếp tục đăng nhập</p>
+        </div>
+        <div class="login-roles">
+          <button class="role-card" id="roleBusiness" data-role="business">
+            <div class="role-icon">🏢</div>
+            <div class="role-name">Doanh nghiệp</div>
+            <div class="role-desc">Công ty lữ hành, HDV, Resort, Vận chuyển – quản lý tour và tiếp cận hàng chục nghìn
+              khách</div>
+            <div class="role-arrow">→</div>
+          </button>
+          <button class="role-card" id="roleCustomer" data-role="customer">
+            <div class="role-icon">🧳</div>
+            <div class="role-name">Khách hàng</div>
+            <div class="role-desc">Tìm kiếm, so sánh và đặt tour du lịch phù hợp nhất với nhu cầu và ngân sách của bạn
+            </div>
+            <div class="role-arrow">→</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Login form -->
+      <div id="loginStep2" style="display:none;">
+        <div class="login-header">
+          <button class="login-back" id="loginBack">← Quay lại</button>
+          <div class="login-logo" style="margin-top:.5rem;">
+            <div class="logo-icon" style="width:44px;height:44px;font-size:1.2rem;">✈</div>
+            <span style="font-size:1.3rem;font-weight:900;color:var(--primary);">TourLink</span>
+          </div>
+          <h2 class="login-title" id="loginFormTitle"></h2>
+          <p class="login-sub" id="loginFormSub"></p>
+        </div>
+
+        <!-- Tabs: Login / Register -->
+        <div class="login-tabs">
+          <button class="login-tab active" id="tabLogin" data-tab="login">Đăng nhập</button>
+          <button class="login-tab" id="tabRegister" data-tab="register">Đăng ký</button>
+        </div>
+
+        <!-- Login form -->
+        <div id="formLogin" class="login-form">
+          <div class="login-field">
+            <label>Email hoặc số điện thoại</label>
+            <input type="text" placeholder="example@email.com" class="login-input" id="loginEmail" />
+          </div>
+          <div class="login-field">
+            <label>Mật khẩu</label>
+            <div style="position:relative;">
+              <input type="password" placeholder="Nhập mật khẩu" class="login-input" id="loginPassword"
+                style="padding-right:2.5rem;" />
+              <button class="pw-toggle" id="pwToggle" type="button" aria-label="Hiện mật khẩu">👁️</button>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;">
+            <label
+              style="display:flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--text-mid);cursor:pointer;">
+              <input type="checkbox" /> Ghi nhớ đăng nhập
+            </label>
+            <a href="#" style="font-size:.82rem;color:var(--primary);text-decoration:none;font-weight:600;">Quên mật
+              khẩu?</a>
+          </div>
+          <button class="btn-login-submit" id="btnLoginSubmit">Đăng nhập →</button>
+          <div class="login-divider"><span>hoặc</span></div>
+          <button class="btn-social google" onclick="showToast('Đăng nhập Google sẽ sớm ra mắt!')">
+            <span>G</span> Tiếp tục với Google
+          </button>
+          <button class="btn-social facebook" onclick="showToast('Đăng nhập Facebook sẽ sớm ra mắt!')">
+            <span>f</span> Tiếp tục với Facebook
+          </button>
+        </div>
+
+        <!-- Register form -->
+        <div id="formRegister" class="login-form" style="display:none;">
+          <div id="businessExtraFields" style="display:none;">
+            <div class="login-field">
+              <label>Tên công ty / Đơn vị</label>
+              <input type="text" placeholder="Công ty Du lịch ABC" class="login-input" />
+            </div>
+            <div class="login-field">
+              <label>Mã số thuế (nếu có)</label>
+              <input type="text" placeholder="0123456789" class="login-input" />
+            </div>
+          </div>
+          <div class="login-field">
+            <label>Họ và tên</label>
+            <input type="text" placeholder="Nguyễn Văn A" class="login-input" />
+          </div>
+          <div class="login-field">
+            <label>Email</label>
+            <input type="email" placeholder="example@email.com" class="login-input" />
+          </div>
+          <div class="login-field">
+            <label>Số điện thoại</label>
+            <input type="tel" placeholder="0901 234 567" class="login-input" />
+          </div>
+          <div class="login-field">
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="Ít nhất 8 ký tự" class="login-input" />
+          </div>
+          <button class="btn-login-submit"
+            onclick="showToast('Đăng ký thành công! Chào mừng bạn đến TourLink 🎉', 'success'); closeLoginModal();">Tạo
+            tài khoản →</button>
+          <p style="font-size:.78rem;color:var(--text-light);text-align:center;margin-top:1rem;">
+            Bằng cách đăng ký, bạn đồng ý với <a href="#" style="color:var(--primary);">Điều khoản sử dụng</a> và <a
+              href="#" style="color:var(--primary);">Chính sách bảo mật</a> của TourLink.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CHAT WIDGET ===== -->
+  <div class="chat-widget">
+    <div class="chat-bubble" id="chatBubble">Tôi có thể giúp gì? 🤖</div>
+    <button class="chat-btn" id="chatBtn" aria-label="Hỗ trợ trực tuyến">💬</button>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo" style="margin-bottom:.75rem;display:inline-flex;">
+          <div class="logo-icon">✈</div>
+          TourLink
+        </a>
+        <p class="footer-desc">Nền tảng so sánh tour du lịch uy tín – Giúp bạn tìm tour tốt nhất với giá hợp lý nhất từ
+          hàng trăm đơn vị lữ hành được kiểm duyệt.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Điểm đến</h4>
+        <ul>
+          <li><a href="#" onclick="event.preventDefault();quickSearch('Sa Pa')">Sa Pa</a></li>
+          <li><a href="#" onclick="event.preventDefault();quickSearch('Đà Lạt')">Đà Lạt</a></li>
+          <li><a href="#" onclick="event.preventDefault();quickSearch('Đà Nẵng')">Đà Nẵng</a></li>
+          <li><a href="#" onclick="event.preventDefault();quickSearch('Phú Quốc')">Phú Quốc</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="#">Trung tâm trợ giúp</a></li>
+          <li><a href="#">Chính sách hoàn tiền</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Công ty</h4>
+        <ul>
+          <li><a href="#">Về TourLink</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Đối tác</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 TourLink. Tất cả quyền được bảo lưu. 🇻🇳</div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
+
 </html>

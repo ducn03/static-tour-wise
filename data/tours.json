@@ -2,185 +2,343 @@
   "tours": [
     {
       "id": 1,
-      "name": "Sa Pa 3 Ngày 2 Đêm - Thung Lũng Mây",
-      "provider": "VIET TRAVELLER",
+      "name": "Sa Pa 3 Ngày 2 Đêm",
+      "provider": "SINH CAFE",
       "destination": "Sa Pa",
-      "duration": "3 Ngày 2 Đêm",
-      "price": 4500000,
+      "destinationKey": "sa pa sapa",
+      "duration": "3 ngày 2 đêm",
+      "price": 2050000,
+      "type": "Tham quan",
+      "transport": "Xe giường nằm",
+      "accommodation": "3 sao",
+      "meals": "5 bữa chính (120k/bữa)",
+      "insurance": "20.000.000 đ/khách",
       "rating": 4.5,
-      "reviews": 1200,
-      "type": "Leo núi",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
-      "accommodation": "3 Sao Khách Sạn",
-      "meals": "5 Bữa (150k/bữa)",
-      "insurance": "20 Tr đ/người",
-      "activities": "Leo núi, Chợ địa phương, Homestay",
-      "highlights": "Trải nghiệm địa phương",
-      "verifiedFeedback": true,
-      "description": "Khám phá vẻ đẹp hùng vĩ của Sa Pa với những ruộng bậc thang tuyệt đẹp, trải nghiệm văn hóa các dân tộc thiểu số và chinh phục đỉnh Fansipan.",
+      "reviews": 320,
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=380&fit=crop",
+      "description": "Tour Sa Pa cùng Sinh Cafe – Trải nghiệm vẻ đẹp thiên nhiên hùng vĩ, văn hóa dân tộc phong phú và ẩm thực núi rừng đặc sắc cùng đội ngũ hướng dẫn viên địa phương nhiệt tình.",
       "itinerary": [
-        "Ngày 1: Hà Nội - Sa Pa, check-in khách sạn, tham quan chợ đêm",
-        "Ngày 2: Leo Fansipan bằng cáp treo, tham quan ruộng bậc thang Mường Hoa",
-        "Ngày 3: Tham quan bản Cát Cát, mua sắm, về Hà Nội"
+        "Ngày 1: Khởi hành từ Hà Nội lúc 21h bằng xe giường nằm VIP – ngủ trên xe",
+        "Ngày 2: Đến Sa Pa, nhận phòng, tham quan thị trấn Sa Pa, Chợ tình, ruộng bậc thang Mường Hoa",
+        "Ngày 3: Thăm bản Cát Cát, mua sắm đặc sản, xe về Hà Nội đến nơi tối"
       ],
-      "inclusions": ["Xe đưa đón", "Khách sạn 3 sao", "5 bữa ăn", "Bảo hiểm du lịch", "Hướng dẫn viên"],
-      "exclusions": ["Vé máy bay", "Chi phí cá nhân", "Đồ uống"],
+      "inclusions": ["Xe giường nằm Hà Nội – Sa Pa khứ hồi", "Khách sạn 3 sao (1 đêm)", "5 bữa ăn chính", "Bảo hiểm 20 triệu/khách", "Hướng dẫn viên địa phương"],
+      "exclusions": ["Chi phí cá nhân", "Đồ uống", "Vé tham quan một số điểm"],
       "reviews_data": [
-        { "name": "An Nguyên", "rating": 5, "comment": "Văn hóa tuyệt vời, hướng dẫn viên nhiệt tình, tour rất đáng tiền!", "verified": true },
-        { "name": "Phúc Lê", "rating": 5, "comment": "Cảnh quan tuyệt đẹp, tổ chức chu đáo. Sẽ quay lại lần nữa!", "verified": true }
+        { "name": "Ngọc Hà", "rating": 5, "comment": "Tour tuyệt vời, xe sạch sẽ, HDV nhiệt tình. Sẽ đi lại lần sau!", "verified": true },
+        { "name": "Minh Tuấn", "rating": 4, "comment": "Sa Pa đẹp lắm, giá hợp lý. Khách sạn ổn nhưng hơi xa trung tâm.", "verified": true }
       ]
     },
     {
       "id": 2,
-      "name": "Sa Pa 3N2Đ - View Sang Trọng",
-      "provider": "ASIA DISCOVERY",
+      "name": "Sa Pa 3 Ngày 2 Đêm",
+      "provider": "DREAM TRAVEL",
       "destination": "Sa Pa",
-      "duration": "Ngày 3D2N",
-      "price": 4800000,
-      "rating": 4.8,
-      "reviews": 350,
-      "type": "Nghỉ dưỡng",
-      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=250&fit=crop",
-      "accommodation": "4 Sao Resort (Nghỉ dưỡng Cao nguyên)",
-      "meals": "6 Bữa (200k/bữa)",
-      "insurance": "50 Tr đ/người",
-      "activities": "Cáp treo Fansipan, Sun World, Bể bơi",
-      "highlights": "Tiện nghi hiện đại",
-      "verifiedFeedback": true,
-      "description": "Trải nghiệm Sa Pa theo phong cách sang trọng với resort 4 sao, dịch vụ cao cấp và các hoạt động giải trí đẳng cấp tại Sun World.",
+      "destinationKey": "sa pa sapa",
+      "duration": "3 ngày 2 đêm",
+      "price": 2890000,
+      "type": "Tham quan",
+      "transport": "Tàu hỏa",
+      "accommodation": "3 sao",
+      "meals": "5 bữa chính (130k/bữa)",
+      "insurance": "20.000.000 đ/khách",
+      "rating": 4.7,
+      "reviews": 215,
+      "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&h=380&fit=crop",
+      "description": "Tour Sa Pa cùng Dream Travel – Hành trình bằng tàu hỏa lãng mạn, khám phá đỉnh Fansipan và làng bản người H'Mông nguyên sơ. Phong cách sang trọng, dịch vụ chuyên nghiệp.",
       "itinerary": [
-        "Ngày 1: Đón tại Hà Nội, di chuyển Sa Pa, nhận phòng resort 4 sao",
-        "Ngày 2: Sun World Fansipan Legend, cáp treo, bể bơi vô cực",
-        "Ngày 3: Spa buổi sáng, mua quà lưu niệm, về Hà Nội"
+        "Ngày 1: Lên tàu từ Ga Hà Nội lúc 22h, tàu VIP cabin 4 chỗ",
+        "Ngày 2: Đến Lào Cai, xe lên Sa Pa, nhận phòng, tham quan Fansipan bằng cáp treo",
+        "Ngày 3: Thăm bản Tả Phìn, mua quà lưu niệm, tàu đêm về Hà Nội"
       ],
-      "inclusions": ["Xe limousine đưa đón", "Resort 4 sao", "6 bữa ăn", "Bảo hiểm cao cấp", "Hướng dẫn viên riêng"],
-      "exclusions": ["Vé máy bay", "Chi phí cá nhân"],
+      "inclusions": ["Tàu hỏa Hà Nội – Lào Cai – Hà Nội (cabin 4 chỗ)", "Khách sạn 3 sao (1 đêm)", "5 bữa ăn chính", "Bảo hiểm 20 triệu/khách", "Xe đưa đón Lào Cai – Sa Pa"],
+      "exclusions": ["Chi phí cá nhân", "Vé cáp treo Fansipan", "Đồ uống"],
       "reviews_data": [
-        { "name": "Minh Châu", "rating": 5, "comment": "Resort đẹp xuất sắc, dịch vụ 5 sao, xứng đáng với giá tiền!", "verified": true },
-        { "name": "Hoàng Nam", "rating": 4, "comment": "Cảnh đẹp, phòng ốc sang trọng. Một số dịch vụ cần cải thiện.", "verified": true }
+        { "name": "Thu Phương", "rating": 5, "comment": "Đi tàu lên Sa Pa thích lắm! Ngắm cảnh đêm trên tàu rất thú vị.", "verified": true },
+        { "name": "Hoàng Đức", "rating": 5, "comment": "Dịch vụ chuyên nghiệp, lịch trình rõ ràng. Giá xứng đáng!", "verified": true }
       ]
     },
     {
       "id": 3,
-      "name": "Đà Nẵng - Hội An 4 Ngày 3 Đêm",
-      "provider": "VIET TRAVELLER",
-      "destination": "Đà Nẵng",
-      "duration": "4 Ngày 3 Đêm",
-      "price": 5900000,
-      "rating": 4.7,
-      "reviews": 890,
-      "type": "Biển",
-      "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400&h=250&fit=crop",
-      "accommodation": "4 Sao Khách Sạn Biển",
-      "meals": "6 Bữa",
-      "insurance": "30 Tr đ/người",
-      "activities": "Bà Nà Hills, Hội An, Ngũ Hành Sơn",
-      "highlights": "Biển xanh cát trắng",
-      "verifiedFeedback": true,
-      "description": "Khám phá thành phố đáng sống Đà Nẵng với bãi biển tuyệt đẹp, phố cổ Hội An charming và Bà Nà Hills kỳ ảo.",
+      "name": "Sa Pa – Fansipan Chinh Phục 2N1Đ",
+      "provider": "ADVENTURE TOURS",
+      "destination": "Sa Pa",
+      "destinationKey": "sa pa sapa fansipan",
+      "duration": "2 ngày 1 đêm",
+      "price": 1650000,
+      "type": "Leo núi",
+      "transport": "Xe limousine",
+      "accommodation": "Homestay bản địa",
+      "meals": "3 bữa chính",
+      "insurance": "15.000.000 đ/khách",
+      "rating": 4.8,
+      "reviews": 190,
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=380&fit=crop",
+      "description": "Tour leo núi dành cho những tâm hồn ưa phiêu lưu – Chinh phục đỉnh Fansipan 3143m, trải nghiệm homestay bản địa và ngắm bình minh tuyệt đẹp trên mây.",
       "itinerary": [
-        "Ngày 1: Bay Đà Nẵng, nhận phòng, tắm biển",
-        "Ngày 2: Bà Nà Hills - Cầu Vàng",
-        "Ngày 3: Phố cổ Hội An, Ngũ Hành Sơn",
-        "Ngày 4: Mua sắm, về Hà Nội"
+        "Ngày 1: Hà Nội → Sa Pa sáng sớm, tham quan làng H'Mông, leo đỉnh Fansipan, ngủ homestay",
+        "Ngày 2: Ngắm bình minh trên đỉnh núi, xuống núi, ăn sáng đặc sản, về Hà Nội chiều"
       ],
-      "inclusions": ["Vé máy bay khứ hồi", "Khách sạn 4 sao biển", "6 bữa ăn", "Bảo hiểm", "Xe đưa đón"],
-      "exclusions": ["Chi phí cá nhân", "Vé tham quan (một số điểm)"],
+      "inclusions": ["Xe limousine khứ hồi", "Homestay bản địa (1 đêm)", "3 bữa ăn", "Bảo hiểm 15 triệu/khách", "Hướng dẫn leo núi chuyên nghiệp"],
+      "exclusions": ["Vé cáp treo Fansipan", "Chi phí cá nhân"],
       "reviews_data": [
-        { "name": "Thu Hà", "rating": 5, "comment": "Tour tuyệt vời! Hội An đêm đẹp lắm. Sẽ quay lại!", "verified": true },
-        { "name": "Văn Đức", "rating": 5, "comment": "Bà Nà Hills ấn tượng, cầu vàng đẹp hơn ảnh nhiều!", "verified": true }
+        { "name": "Quang Huy", "rating": 5, "comment": "Đỉnh cao thực sự! Cảnh bình minh trên Fansipan đẹp choáng ngợp!", "verified": true },
+        { "name": "Bảo Ngọc", "rating": 5, "comment": "Homestay thú vị, trải nghiệm văn hóa H'Mông rất đáng nhớ!", "verified": true }
       ]
     },
     {
       "id": 4,
-      "name": "Phú Quốc 5 Ngày 4 Đêm Premium",
-      "provider": "ASIA DISCOVERY",
-      "destination": "Phú Quốc",
-      "duration": "5 Ngày 4 Đêm",
-      "price": 8500000,
-      "rating": 4.9,
-      "reviews": 520,
+      "name": "Đà Lạt 4 Ngày 3 Đêm",
+      "provider": "SAIGON STAR",
+      "destination": "Đà Lạt",
+      "destinationKey": "da lat dalat",
+      "duration": "4 ngày 3 đêm",
+      "price": 3886000,
       "type": "Nghỉ dưỡng",
-      "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&h=250&fit=crop",
-      "accommodation": "5 Sao Resort Biển",
-      "meals": "8 Bữa (Fine Dining)",
-      "insurance": "100 Tr đ/người",
-      "activities": "Lặn biển, Câu cá, Spa",
-      "highlights": "Đảo ngọc thiên đường",
-      "verifiedFeedback": true,
-      "description": "Tận hưởng kỳ nghỉ xa hoa ở đảo ngọc Phú Quốc với resort 5 sao, bãi biển riêng và dịch vụ đẳng cấp thế giới.",
+      "transport": "Xe 45 chỗ đời mới",
+      "accommodation": "3 sao",
+      "meals": "6 bữa ăn chính (150k/bữa)",
+      "insurance": "20.000.000 đ/khách",
+      "rating": 4.6,
+      "reviews": 178,
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=380&fit=crop",
+      "description": "Tour Đà Lạt cùng Saigon Star – Thành phố ngàn hoa với khí hậu se lạnh, vườn dâu tây, thác Prenn và những con đường thông rừng thơ mộng.",
       "itinerary": [
-        "Ngày 1: Bay Phú Quốc, nhận phòng resort 5 sao",
-        "Ngày 2: Lặn biển san hô, tham quan đảo",
-        "Ngày 3: Spa & Wellness, bãi biển riêng",
-        "Ngày 4: Câu cá, nướng BBQ trên thuyền",
-        "Ngày 5: Mua sắm, về Hà Nội"
+        "Ngày 1: TP.HCM → Đà Lạt chiều, nhận phòng, dạo phố đêm",
+        "Ngày 2: Thác Prenn, Vườn hoa thành phố, Làng hoa Vạn Thành, chợ đêm Đà Lạt",
+        "Ngày 3: Đồi Robin, vườn dâu tây, cà phê Mê Linh, Thiền viện Trúc Lâm",
+        "Ngày 4: Mua sắm đặc sản, về TP.HCM tối"
       ],
-      "inclusions": ["Vé máy bay hạng thương gia", "Resort 5 sao", "8 bữa Fine Dining", "Bảo hiểm cao cấp", "Butler riêng"],
-      "exclusions": ["Chi phí cá nhân"],
+      "inclusions": ["Xe 45 chỗ đời mới khứ hồi", "Khách sạn 3 sao (3 đêm)", "6 bữa ăn chính", "Bảo hiểm 20 triệu/khách", "Hướng dẫn viên"],
+      "exclusions": ["Chi phí cá nhân", "Vé tham quan một số điểm", "Đồ uống"],
       "reviews_data": [
-        { "name": "Linh Chi", "rating": 5, "comment": "Resort đẳng cấp quốc tế! Dịch vụ hoàn hảo từng chi tiết.", "verified": true },
-        { "name": "Bảo Long", "rating": 5, "comment": "Phú Quốc đẹp như mơ, resort tuyệt vời. Chắc chắn sẽ quay lại!", "verified": true }
+        { "name": "Lan Anh", "rating": 5, "comment": "Đà Lạt quá đẹp! Lịch trình dày nhưng không mệt. Ăn ngon, phòng tốt.", "verified": true },
+        { "name": "Việt Hùng", "rating": 4, "comment": "Tour chất lượng, HDV vui tính. Thời tiết hơi lạnh nên nhớ mang áo.", "verified": true }
       ]
     },
     {
       "id": 5,
-      "name": "Hà Giang Loop 3 Ngày 2 Đêm",
-      "provider": "ADVENTURE TOURS",
-      "destination": "Hà Giang",
-      "duration": "3 Ngày 2 Đêm",
-      "price": 3200000,
-      "rating": 4.6,
-      "reviews": 670,
-      "type": "Leo núi",
-      "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=250&fit=crop",
-      "accommodation": "Homestay Dân tộc",
-      "meals": "5 Bữa",
-      "insurance": "15 Tr đ/người",
-      "activities": "Đèo Mã Pí Lèng, Đồng Văn, Lũng Cú",
-      "highlights": "Cao nguyên đá kỳ vĩ",
-      "verifiedFeedback": true,
-      "description": "Chinh phục cao nguyên đá Đồng Văn - một trong những cao nguyên đá đẹp nhất thế giới. Trải nghiệm văn hóa H'Mông độc đáo.",
+      "name": "Đà Lạt 4 Ngày 3 Đêm",
+      "provider": "SAIGONTOURIST",
+      "destination": "Đà Lạt",
+      "destinationKey": "da lat dalat",
+      "duration": "4 ngày 3 đêm",
+      "price": 3290000,
+      "type": "Nghỉ dưỡng",
+      "transport": "Xe 45 chỗ đời mới",
+      "accommodation": "3 sao",
+      "meals": "6 bữa chính (140k/bữa)",
+      "insurance": "20.000.000 đ/khách",
+      "rating": 4.8,
+      "reviews": 402,
+      "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&h=380&fit=crop",
+      "description": "Tour Đà Lạt cùng Saigontourist – Thương hiệu hàng đầu Việt Nam với dịch vụ chuyên nghiệp, lịch trình tinh tế và giá cạnh tranh nhất thị trường.",
       "itinerary": [
-        "Ngày 1: Hà Nội - Hà Giang, khởi động loop",
-        "Ngày 2: Đèo Mã Pí Lèng, Mèo Vạc, Đồng Văn",
-        "Ngày 3: Lũng Cú, về Hà Nội"
+        "Ngày 1: TP.HCM → Đà Lạt, nhận phòng, tham quan Hồ Xuân Hương",
+        "Ngày 2: Langbiang, vườn hoa Vạn Thành, chợ đêm",
+        "Ngày 3: Đồi thông, hầm rượu vang, cà phê vườn, thác Datanla",
+        "Ngày 4: Mua sắm đặc sản mứt, trà Atiso, về TP.HCM"
       ],
-      "inclusions": ["Xe máy/xe ô tô", "Homestay", "5 bữa ăn", "Bảo hiểm", "Hướng dẫn viên địa phương"],
-      "exclusions": ["Vé tham quan", "Chi phí cá nhân"],
+      "inclusions": ["Xe 45 chỗ đời mới khứ hồi", "Khách sạn 3 sao (3 đêm)", "6 bữa ăn chính", "Bảo hiểm 20 triệu/khách", "Hướng dẫn viên Saigontourist"],
+      "exclusions": ["Chi phí cá nhân", "Vé tham quan", "Đồ uống"],
       "reviews_data": [
-        { "name": "Quang Huy", "rating": 5, "comment": "Đường đèo ám ảnh! Cảnh đẹp không thể tả. Must-do!", "verified": true },
-        { "name": "Mai Phương", "rating": 4, "comment": "Hành trình vất vả nhưng xứng đáng. Homestay thú vị!", "verified": true }
+        { "name": "Kim Ngân", "rating": 5, "comment": "Saigontourist làm uy tín lắm! Đúng giờ, chuyên nghiệp, ăn ngon.", "verified": true },
+        { "name": "Bình An", "rating": 5, "comment": "Giá tốt nhất mà tôi tìm được, dịch vụ xứng đáng 5 sao!", "verified": true }
       ]
     },
     {
       "id": 6,
-      "name": "Nha Trang 3 Ngày 2 Đêm - Đảo Nhỏ",
+      "name": "Đà Lạt Cuối Tuần 2N1Đ",
       "provider": "VIET TRAVELLER",
-      "destination": "Nha Trang",
-      "duration": "3 Ngày 2 Đêm",
-      "price": 4100000,
-      "rating": 4.4,
-      "reviews": 1100,
-      "type": "Biển",
-      "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=250&fit=crop",
-      "accommodation": "3 Sao Khách Sạn Trung Tâm",
-      "meals": "5 Bữa Hải Sản",
-      "insurance": "20 Tr đ/người",
-      "activities": "Tour 4 Đảo, Vinpearl Land, Tắm Bùn",
-      "highlights": "Biển xanh 4 đảo",
-      "verifiedFeedback": true,
-      "description": "Khám phá vùng biển Nha Trang với tour 4 đảo nổi tiếng, tắm bùn khoáng độc đáo và công viên Vinpearl Land sôi động.",
+      "destination": "Đà Lạt",
+      "destinationKey": "da lat dalat cuoi tuan",
+      "duration": "2 ngày 1 đêm",
+      "price": 1980000,
+      "type": "Tham quan",
+      "transport": "Xe ghế ngồi cao cấp",
+      "accommodation": "4 sao (Đà Lạt Palace)",
+      "meals": "4 bữa ăn",
+      "insurance": "20.000.000 đ/khách",
+      "rating": 4.5,
+      "reviews": 134,
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=380&fit=crop",
+      "description": "Tour Đà Lạt cuối tuần lý tưởng cho những ai muốn thoát khỏi TP.HCM – Trải nghiệm cà phê nhà kính, vườn dâu, đồi cỏ hồng và không khí se lạnh đặc trưng.",
       "itinerary": [
-        "Ngày 1: Bay Nha Trang, nhận phòng, dạo bãi biển",
-        "Ngày 2: Tour 4 đảo, tắm bùn khoáng",
-        "Ngày 3: Vinpearl Land, về Hà Nội"
+        "Ngày 1: Khởi hành sáng sớm từ TP.HCM, đến Đà Lạt trưa, nhận phòng, cà phê nhà kính Mê Linh, chợ đêm",
+        "Ngày 2: Vườn dâu tây, Đồi cỏ hồng, Hầm rượu Vang, Bảo Đại, về TP.HCM tối"
       ],
-      "inclusions": ["Vé máy bay", "Khách sạn 3 sao", "5 bữa hải sản", "Bảo hiểm", "Vé tour 4 đảo"],
-      "exclusions": ["Vé Vinpearl", "Chi phí cá nhân"],
+      "inclusions": ["Xe cao cấp khứ hồi", "Khách sạn 4 sao (1 đêm)", "4 bữa ăn", "Bảo hiểm 20 triệu/khách", "Hướng dẫn viên"],
+      "exclusions": ["Chi phí cá nhân", "Đồ uống"],
       "reviews_data": [
-        { "name": "Khánh Ly", "rating": 5, "comment": "Tour 4 đảo rất vui! Hải sản tươi ngon, hướng dẫn viên dễ thương!", "verified": true },
-        { "name": "Tuấn Anh", "rating": 4, "comment": "Biển đẹp, ổn nhưng nên tránh mùa cao điểm.", "verified": true }
+        { "name": "Hồng Nhung", "rating": 5, "comment": "Tour cuối tuần hoàn hảo! Đà Lạt thơ mộng, khách sạn 4 sao rất xứng đáng.", "verified": true },
+        { "name": "Thanh Long", "rating": 4, "comment": "Đi về trong 2 ngày nhưng chơi được nhiều điểm. Giá hợp lý!", "verified": true }
+      ]
+    }
+  ],
+  "guidebook": [
+    {
+      "id": 1,
+      "icon": "🏔️",
+      "category": "Kinh nghiệm",
+      "title": "Kinh nghiệm du lịch Sa Pa từ A đến Z",
+      "subtitle": "Tất cả những gì bạn cần biết trước khi đến Sa Pa",
+      "author": "TourLink Team",
+      "date": "15/03/2026",
+      "readTime": "10 phút",
+      "coverImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop",
+      "sections": [
+        {
+          "heading": "Thời điểm tốt nhất để ghé thăm",
+          "content": "Sa Pa đẹp nhất vào tháng 9-11 (mùa lúa chín vàng) và tháng 3-5 (hoa đào, hoa mận nở rộ). Tránh tháng 12-2 do sương mù dày đặc và lạnh sâu. Tháng 7-8 là mùa mưa nên cần chuẩn bị áo mưa."
+        },
+        {
+          "heading": "Di chuyển lên Sa Pa",
+          "content": "Từ Hà Nội có 3 lựa chọn: Xe giường nằm (8-9 tiếng, ~200k-350k), Tàu hỏa đến Lào Cai rồi xe lên Sa Pa (8 tiếng, lãng mạn hơn), Xe limousine cao cấp (6-7 tiếng, tiện nghi). Nên đặt vé trước 1-2 tuần vào mùa cao điểm."
+        },
+        {
+          "heading": "Những điểm tham quan không thể bỏ qua",
+          "content": "Ruộng bậc thang Mường Hoa, Đỉnh Fansipan (cáp treo hoặc leo bộ 2 ngày), Bản Cát Cát, Bản Tả Phìn, Chợ tình Sa Pa (thứ 7 đêm), Thác Bạc, Cổng trời O Quy Hồ."
+        },
+        {
+          "heading": "Ẩm thực đặc sản không thể bỏ qua",
+          "content": "Thắng cố (lẩu ngựa truyền thống H'Mông), Cơm lam nướng, Thịt trâu gác bếp, Rau cải mèo xào tỏi, Trứng nướng than, Rượu táo mèo ngâm. Giá ăn uống ở chợ rất phải chăng từ 30k-80k/món."
+        },
+        {
+          "heading": "Lưu ý về thời tiết và trang phục",
+          "content": "Dù mùa hè Sa Pa vẫn mát lạnh buổi sáng tối (15-20°C). Mùa đông có thể 0-5°C, đôi khi có tuyết rơi. Luôn mang theo áo khoác dày, giày đi bộ chắc chắn chống trơn trượt. Kem chống nắng SPF 50+ là bắt buộc."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "🌸",
+      "category": "Cẩm nang",
+      "title": "Đà Lạt – Thành phố ngàn hoa bốn mùa",
+      "subtitle": "Hướng dẫn chi tiết khám phá Đà Lạt từ kẻ đã đến 5 lần",
+      "author": "Saigontourist",
+      "date": "10/03/2026",
+      "readTime": "12 phút",
+      "coverImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=450&fit=crop",
+      "sections": [
+        {
+          "heading": "Tại sao Đà Lạt luôn hấp dẫn?",
+          "content": "Đà Lạt nằm ở độ cao 1500m so với mực nước biển, mang khí hậu mát mẻ quanh năm (15-25°C). Thành phố mang kiến trúc Pháp cổ điển xen lẫn thiên nhiên thông rừng hữu tình – điểm nghỉ dưỡng lý tưởng cho cả cặp đôi, gia đình và hội bạn."
+        },
+        {
+          "heading": "Top điểm tham quan nổi bật",
+          "content": "Hồ Xuân Hương (trung tâm thành phố), Langbiang (điểm ngắm toàn cảnh Đà Lạt), Thác Datanla (zipline mạo hiểm), Vườn hoa Đà Lạt (5 hecta hoa đủ loại), Đồi thông (chụp ảnh đẹp), Thiền viện Trúc Lâm, Bảo Đại cung điện III, Hầm rượu vang Đà Lạt."
+        },
+        {
+          "heading": "Đặc sản nhất định phải thử",
+          "content": "Dâu tây tươi (hái tại vườn), Bánh tráng nướng Đà Lạt, Bơ Đà Lạt (sinh tố bơ béo ngậy), Mứt các loại (dứa, cà chua, dâu), Sữa đậu nành nóng buổi sáng, Bánh căn, Pizza lò củi, Trà atiso Đà Lạt. Buổi tối ở chợ đêm Đà Lạt nhất định phải ăn bánh tráng nướng!"
+        },
+        {
+          "heading": "Cà phê Đà Lạt – trải nghiệm không thể thiếu",
+          "content": "Đà Lạt là thiên đường cà phê với hàng trăm quán có view cực đẹp. Nổi bật nhất: Mê Linh (view thông rừng), The Married Beans (phong cách cổ điển), Somewhere In Time (thiết kế độc đáo), Túi Mơ To (phong cách vintage). Giá từ 30k-80k/ly."
+        },
+        {
+          "heading": "Đi lại trong thành phố",
+          "content": "Thuê xe máy là cách tốt nhất để khám phá Đà Lạt (100k-150k/ngày). Xe ôm, Grab cũng có. Một số điểm xa như Langbiang, Vườn hoa nên đi xe máy hoặc đặt xe. Chú ý đường dốc và hơi sương mù buổi sáng sớm."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "🏖️",
+      "category": "Khám phá",
+      "title": "Top 10 bãi biển đẹp nhất Việt Nam 2026",
+      "subtitle": "Từ Bắc vào Nam – những thiên đường biển xanh cát trắng",
+      "author": "TourLink Team",
+      "date": "05/03/2026",
+      "readTime": "8 phút",
+      "coverImage": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=450&fit=crop",
+      "sections": [
+        {
+          "heading": "1. Phú Quốc – Đảo ngọc thiên đường",
+          "content": "Bãi Sao được mệnh danh là bãi biển đẹp nhất Đông Nam Á với cát trắng mịn và nước biển xanh trong vắt. Phú Quốc còn có Grand World, VinWonders và hệ thống resort 5 sao đẳng cấp quốc tế."
+        },
+        {
+          "heading": "2. Nha Trang – Thành phố biển sôi động",
+          "content": "Bãi biển Nha Trang dài 7km thẳng tắp ngay trung tâm thành phố. Đặc biệt là hệ thống đảo: Hòn Tre (Vinpearl Land), Hòn Mun (lặn biển san hô), Hòn Tằm (nghỉ dưỡng). Nha Trang nổi tiếng với tắm bùn khoáng Tháp Bà."
+        },
+        {
+          "heading": "3. Đà Nẵng – Thành phố đáng sống",
+          "content": "Bãi biển Mỹ Khê được Forbes bình chọn là một trong 6 bãi biển đẹp nhất hành tinh. Trong bán kính 30km có Cầu Vàng Bà Nà Hills, Phố cổ Hội An và Ngũ Hành Sơn – combo du lịch hoàn hảo."
+        },
+        {
+          "heading": "4. Côn Đảo – Thiên đường hoang sơ",
+          "content": "Ít người biết nhưng Côn Đảo mới là viên ngọc bí ẩn nhất Việt Nam. Nước biển xanh ngọc, rùa biển đẻ trứng ban đêm, vườn quốc gia nguyên sinh. Chỉ nên đến từ tháng 3-9 vì tránh mùa bão."
+        },
+        {
+          "heading": "5. Mũi Né – Thiên đường của gió",
+          "content": "Nổi tiếng với đồi cát bay, suối tiên và các resort kite-surf. Mũi Né là điểm đến yêu thích của dân Tây và cộng đồng lướt sóng. Đồi cát đỏ và đồi cát trắng là backdrop ảnh cực ấn tượng."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "💰",
+      "category": "Mẹo hay",
+      "title": "Bí kíp đặt tour giá rẻ – tiết kiệm đến 40%",
+      "subtitle": "Những mẹo vàng từ dân đi tour chuyên nghiệp",
+      "author": "TourLink Team",
+      "date": "01/03/2026",
+      "readTime": "6 phút",
+      "coverImage": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&h=450&fit=crop",
+      "sections": [
+        {
+          "heading": "Đặt sớm – Giá tốt hơn 30%",
+          "content": "Phần lớn công ty tour áp dụng giá early bird: đặt trước 30 ngày giảm 10-15%, đặt trước 60 ngày giảm 20-30%. Đặc biệt dịp lễ Tết, hè, nên đặt trước ít nhất 2-3 tháng để có vé tốt và không bị hết chỗ."
+        },
+        {
+          "heading": "Đi vào mùa thấp điểm",
+          "content": "Giá tour mùa thấp điểm (tháng 1-3 sau Tết, tháng 9-10) thường rẻ hơn 20-40% so với mùa cao điểm hè và lễ. Thêm vào đó, điểm du lịch ít đông đúc hơn, trải nghiệm tốt hơn nhiều."
+        },
+        {
+          "heading": "So sánh trực tiếp trên TourLink",
+          "content": "Thay vì mất 2-3 tiếng so sánh thủ công, hãy dùng công cụ so sánh tour của TourLink. Chọn điểm đến, tìm kiếm và hệ thống tự động so sánh giá, dịch vụ, đánh giá từ nhiều nhà cung cấp ngay lập tức."
+        },
+        {
+          "heading": "Đi nhóm để có giá tốt hơn",
+          "content": "Đặt tour cho nhóm từ 10 người thường được giảm thêm 5-15%. Nhiều công ty có chính sách 1 người miễn phí khi đặt nhóm 10. Hãy liên hệ trực tiếp với nhà cung cấp để thương lượng giá đoàn."
+        },
+        {
+          "heading": "Đọc kỹ điều khoản trước khi đặt",
+          "content": "Chú ý: dịch vụ bao gồm gì, chính sách hủy tour, phụ phí phát sinh (vé vào cổng, ăn uống tự túc). Một tour giá rẻ nhưng có nhiều phụ phí có thể đắt hơn tour giá cao. TourLink hiển thị rõ mọi thông tin này."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "🍜",
+      "category": "Ẩm thực",
+      "title": "Ẩm thực Sa Pa – Những món không thể bỏ qua",
+      "subtitle": "Bí quyết ăn ngon, giá rẻ ở thị trấn núi rừng",
+      "author": "Sinh Cafe",
+      "date": "25/02/2026",
+      "readTime": "5 phút",
+      "coverImage": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=450&fit=crop",
+      "sections": [
+        {
+          "heading": "Thắng cố – Linh hồn ẩm thực H'Mông",
+          "content": "Thắng cố là món lẩu từ thịt ngựa và các bộ phận nộ tạng, được nấu với gia vị độc đáo của người H'Mông. Ăn kèm mèn mén (bánh ngô) và uống rượu ngô. Phải thử ở chợ phiên thứ 7 và 8 tại thị trấn Sa Pa – giá chỉ từ 50k-80k/bát."
+        },
+        {
+          "heading": "Cơm lam nướng và thịt trâu gác bếp",
+          "content": "Cơm lam là gạo nếp nấu trong ống tre, có mùi thơm đặc trưng. Ăn kèm thịt trâu gác bếp khô – một loại thịt hun khói theo cách truyền thống của người Thái. Mua về làm quà biếu rất được ưa chuộng, giá 150k-300k/túi."
+        },
+        {
+          "heading": "Rau cải mèo và các loại rau rừng",
+          "content": "Cải mèo là loại rau xanh đặc trưng chỉ có ở vùng cao, xào tỏi giòn ngọt lạ. Ngoài ra còn có ngọn su su, rau mầm đá, fiddlehead ferns – những món rau rừng phổ biến trên bàn ăn Sa Pa."
+        },
+        {
+          "heading": "Trứng nướng và khoai nướng",
+          "content": "Dọc đường Sa Pa buổi sáng sớm, những xe đẩy nướng trứng gà, trứng vịt và khoai lang tím trên than hồng rất hấp dẫn. Giá chỉ 5k-15k/quả, là bữa sáng dã ngoại lý tưởng khi thời tiết se lạnh."
+        },
+        {
+          "heading": "Rượu táo mèo và rượu ngô",
+          "content": "Hai loại rượu nổi tiếng nhất Sa Pa. Rượu táo mèo có vị chua nhẹ, uống ấm người rất phù hợp với khí hậu lạnh. Rượu ngô là rượu trắng ủ men lá của người H'Mông, nồng và thơm. Giá từ 80k-200k/chai."
+        }
       ]
     }
   ]
