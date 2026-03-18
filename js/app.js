@@ -541,7 +541,7 @@ const combosData = [
   { name: 'Sa Pa + Hà Giang 5N4Đ', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=200&fit=crop', price: 6200000, save: 15, sub: 'SINH CAFE · Khám phá' },
   { name: 'Đà Lạt + Nha Trang 6N5Đ', image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=200&h=200&fit=crop', price: 7900000, save: 20, sub: 'SAIGONTOURIST · Nghỉ dưỡng' },
   { name: 'Phú Quốc + Côn Đảo 7N6Đ', image: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=200&h=200&fit=crop', price: 12500000, save: 25, sub: 'DREAM TRAVEL · Biển đảo' },
-  { name: 'Hội An + Huế + Đà Nẵng 5N4Đ', image: 'https://images.unsplash.com/photo-1553858245-f5a86e9bbf23?w=200&h=200&fit=crop', price: 8400000, save: 18, sub: 'SAIGON STAR · Văn hóa' },
+  { name: 'Hội An + Huế + Đà Nẵng 5N4Đ', image: 'https://cdn.vietnamisawesome.com/wp-content/uploads/2023/04/hoi-an-ancient-town-7-2048x1536.jpg', price: 8400000, save: 18, sub: 'SAIGON STAR · Văn hóa' },
 ];
 function renderCombos() {
   $('comboGrid').innerHTML = combosData.map(c => `
