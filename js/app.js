@@ -1,5 +1,5 @@
 /* ==========================================================
-   TourLink – app.js
+   TourWise – app.js
    Flow: Empty → Search (normalized) → Cards + Auto Compare
    + Login Modal (role selection) + Guidebook Detail
    ========================================================== */
@@ -606,7 +606,7 @@ function renderPartnerPage() {
           <option>Resort / Khách sạn</option>
           <option>Vận chuyển du lịch</option>
         </select>
-        <button class="btn-compare" onclick="showToast('Đã gửi đăng ký! TourLink sẽ liên hệ trong 24h 🎉', 'success')">Gửi đăng ký ngay →</button>
+        <button class="btn-compare" onclick="showToast('Đã gửi đăng ký! TourWise sẽ liên hệ trong 24h 🎉', 'success')">Gửi đăng ký ngay →</button>
       </div>
     </div>
     <div class="stats-row">
