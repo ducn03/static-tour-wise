@@ -565,7 +565,7 @@ const destData = [
   { name: 'Phú Quốc', count: '10 tour', img: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&h=300&fit=crop' },
   { name: 'Hà Giang', count: '6 tour', img: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=300&fit=crop' },
   { name: 'Nha Trang', count: '11 tour', img: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=300&fit=crop' },
-  { name: 'Hội An', count: '9 tour', img: 'https://images.unsplash.com/photo-1553858245-f5a86e9bbf23?w=400&h=300&fit=crop' },
+  { name: 'Hội An', count: '9 tour', img: 'https://cdn.vietnamisawesome.com/wp-content/uploads/2023/04/hoi-an-ancient-town-7-2048x1536.jpg' },
   { name: 'Hạ Long', count: '14 tour', img: 'https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=400&h=300&fit=crop' },
 ];
 function renderDestinations() {
