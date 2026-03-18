@@ -8,9 +8,9 @@
 }
 
 :root {
-  --primary: #0EA5E9;
-  --primary-dark: #0284C7;
-  --primary-light: #E0F2FE;
+  --primary: #3f907c;
+  --primary-dark: #2F606D;
+  --primary-light: #e0fef8;
   --secondary: #10B981;
   --accent: #F59E0B;
   --danger: #EF4444;
@@ -160,7 +160,7 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 45%, #7DD3FC 100%);
+  background: linear-gradient(135deg, #30727E 0%, #5FB4A8 45%, #5BB7A4 100%);
   padding: 3.5rem 2rem 2.5rem;
   position: relative;
   overflow: hidden;
